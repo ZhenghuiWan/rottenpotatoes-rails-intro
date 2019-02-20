@@ -1,6 +1,4 @@
 class MoviesController < ApplicationController
-  helper_method :hilight
-  helper_method :checked_rating?
   
   def movie_params
     params.require(:movie).permit(:title, :rating, :description, :release_date)
@@ -57,20 +55,6 @@ class MoviesController < ApplicationController
     @movie.destroy
     flash[:notice] = "Movie '#{@movie.title}' deleted."
     redirect_to movies_path
-  end
-
-  def hilight(column)
-    if(session[:order].to_s == column)
-      return 'hilite'
-    else
-      return nil
-    end
-  end
-
-  def checked_rating?(rating)
-    checked_ratings = session[:ratings]
-    return true if checked_ratings.nil?
-    checked_ratings.include? rating
   end
 
 end
