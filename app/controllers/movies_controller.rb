@@ -11,45 +11,28 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @all_ratings = Movie.all_ratings
-
-    #Update seesion parameters: :sort_by :ratings
-    if !params[:sort_by].nil? and params[:sort_by] != session[:sort_by]
-      session[:sort_by] = params[:sort_by]
+    order = params[:ele] #retrieve movie ID from UPI route
+    @movies = order == nil ? Movie.all : Movie.order("#{order} ASC") 
+    @title_class = order =="title" ? "hilite" : ""
+    @release_date_class = order == "release_date" ? "hilite" : ""
+    
+    
+    @all_ratings = ['G','PG','PG-13','R','NC-17']
+    if params[:ratings].nil? 
+      @r_filter = @all_ratings 
+      else
+        @r_filter = params[:ratings].keys
+        session[:ratings] = params[:ratings]
     end
-
-    if !params[:ratings].nil? and params[:ratings] != session[:ratings]
-      session[:ratings] = params[:ratings]
-    end
-
-    #If no explicitly new sroting/filtering setting, redirect
-    if params[:ratings].nil? && params[:sort_by].nil?
-      #In case both session[:ratings] and sessioin[:sort_by] are nil, prevent infinite redirect loop
-      if !session[:ratings].nil? || !session[:sort_by].nil?
-        flash.keep
-        redirect_to movies_path(:sort_by => session[:sort_by], :ratings => session[:ratings])
-      end
-    end
-
-    @sort_by = session[:sort_by]
-    @ratings = session[:ratings]
-
-    #If no rating check_box checked, show all movies
-    #Initial value of @ratings shouldn't be nil. If it happens, set its value to @all_ratings
-    if(@ratings)
-      @rating_keys = @ratings.keys
+    @r_filter = session[:ratings].keys unless session[:ratings].nil?
+    
+    if params[:ele].nil?
+      @sort = session[:ele]
     else
-      @rating_keys = @all_ratings
+      @sort = params[:ele]
+      session[:ele] = params[:ele]
     end
-
-    #Select movies been checked
-    @movies = Movie.where(rating: @rating_keys)
-    #Sort movies 
-    if(@sort_by)
-      @movies = @movies.order(@sort_by)
-    else
-      @movies = @movies.all
-    end
+    @movies = Movie.where(:rating => @r_filter).order(@sort)
   end
 
   def new
