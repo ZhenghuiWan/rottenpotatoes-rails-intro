@@ -1,0 +1,53 @@
+Name: Zhenghui Wan
+Uin: 427009807
+
+Log file:
+5646d16 was EC2 Default User, 3 hours ago, message: <Part3.1>
+8ebdd8c was EC2 Default User, 4 hours ago, message: <Part2.7>
+b503f8d was EC2 Default User, 4 hours ago, message: <Part2.6>
+21a7b04 was EC2 Default User, 4 hours ago, message: <Part2.5>
+b191916 was EC2 Default User, 4 hours ago, message: <Part2.4>
+27302e5 was EC2 Default User, 4 hours ago, message: <Part2.3>
+2ee9791 was EC2 Default User, 4 hours ago, message: <Part2.2>
+f78a59d was EC2 Default User, 5 hours ago, message: <part2.1>
+900a6c1 was EC2 Default User, 15 hours ago, message: <Part1.5>
+1c7ae73 was EC2 Default User, 16 hours ago, message: <Part1.4>
+597ed52 was EC2 Default User, 17 hours ago, message: <Part1.1>
+c1ba3c3 was EC2 Default User, 18 hours ago, message: <Part1_Completed>
+d62f2b1 was An Ju, 5 days ago, message: Merge pull request #31 from saasbook/update-instructions
+923f603 was an-ju, 6 days ago, message: Complete the remote location.
+d458b53 was an-ju, 7 days ago, message: fixed a path error.
+ffd8c5f was an-ju, 7 days ago, message: fixed a format error.
+8aae4a8 was an-ju, 7 days ago, message: Merged two repositories and updated the instructions.
+c29f5f4 was An Ju, 7 days ago, message: Merge pull request #30 from saasbook/reverse-css-updates
+3a109f4 was an-ju, 7 days ago, message: Revert "changed all styles to bootstrap"
+cd77be9 was An Ju, 7 days ago, message: Merge pull request #29 from saasbook/update-ruby-version
+f560c29 was an-ju, 7 days ago, message: update ruby version to be compactable with 2.2-3.0
+858bd81 was Adnan Hemani, 9 days ago, message: Merge pull request #26 from adnanhemani/sp19/bootstrap
+1539ab0 was Adnan Hemani, 5 weeks ago, message: changed all styles to bootstrap
+39ebb84 was Sam Joseph, 7 months ago, message: Merge pull request #22 from saasbook/ruby_2_4
+edf5838 was Sam Joseph, 8 months ago, message: Update todo.md
+97e561a was Sam Joseph, 8 months ago, message: Update todo.md
+cd0e742 was Sam Joseph, 8 months ago, message: Merge branch 'ruby_2_4' of https://github.com/saasbook/rottenpotatoes-rails-intro into ruby_2_4
+c3f1325 was Sam Joseph, 8 months ago, message: lock to pg 0.21
+c977873 was Sam Joseph, 9 months ago, message: Update todo.md
+45e6dc5 was Sam Joseph, 9 months ago, message: Create todo.md
+1a05123 was Sam Joseph, 9 months ago, message: upgraded to ruby 2.4 and rails 4.2.10
+691b8ea was Armando Fox, 1 year, 6 months ago, message: Update README.md
+631e618 was Sam Joseph, 2 years, 8 months ago, message: updates Gemfile.lock to Rails 4.2.6 and Ruby 2.3.0
+96c4711 was Sam Joseph, 2 years, 8 months ago, message: Update Gemfile
+112df68 was Sam Joseph, 2 years, 8 months ago, message: Update README.md
+8ffc620 was Sam Joseph, 2 years, 8 months ago, message: Update README.md
+9335935 was Armando Fox, 2 years, 11 months ago, message: update README
+cfadc3d was Armando Fox, 2 years, 11 months ago, message: updated Gemfile to fix hard error: dependency on a yanked version of rb-inotify
+e01e1c6 was Armando Fox, 2 years, 11 months ago, message: add README
+4494443 was Armando Fox, 2 years, 11 months ago, message: use Guard rather than autotest; version initial schema.rb
+acd6bb2 was Armando Fox, 3 years, 3 months ago, message: Merge pull request #5 from patmbolger/add-root-route
+631f137 was Patrick Bolger, 3 years, 3 months ago, message: added root route
+dace648 was Armando Fox, 3 years, 4 months ago, message: Merge pull request #2 from tansaku/master
+a359297 was Sam Joseph, 3 years, 5 months ago, message: Update Gemfile
+dd61964 was Armando Fox, 3 years, 6 months ago, message: lock Ruby to 2.2.2 in Gemfile
+d8d8098 was Armando Fox, 3 years, 6 months ago, message: skeleton ready
+f3d6e1e was Armando Fox, 3 years, 6 months ago, message: added Haml, resourceful routes
+2d81334 was Armando Fox, 3 years, 6 months ago, message: adding base files from rottenpotatoes app
+49bf4c4 was Armando Fox, 3 years, 6 months ago, message: Version usable with hw-rails-intro
