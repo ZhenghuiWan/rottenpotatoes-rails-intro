@@ -19,7 +19,6 @@ class MoviesController < ApplicationController
     else
       @movies = Movie.all
     end
-    end
   end
 
   def new
